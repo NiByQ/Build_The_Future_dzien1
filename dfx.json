@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "btfdzen1_backend": {
+      "candid": "src/btfdzen1_backend/btfdzen1_backend.did",
+      "package": "btfdzen1_backend",
+      "type": "rust"
+    },
+    "btfdzen1_frontend": {
+      "dependencies": [
+        "btfdzen1_backend"
+      ],
+      "source": [
+        "src/btfdzen1_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "btfdzen1_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
